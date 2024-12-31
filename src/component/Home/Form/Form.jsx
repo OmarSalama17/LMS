@@ -25,13 +25,13 @@ const Form = ({click , login}) => {
         setLoggedInUser(foundUser.userName)
         setEmail(foundUser.email)
         if (foundUser.role === "admin") {
-          navigate("/")
+          navigate("/LMS")
           login()
         } else if(foundUser.role === "user"){
-            navigate("/")
+            navigate("/LMS")
             login()
         }else if(foundUser.role === "instructor"){
-          navigate("/")
+          navigate("/LMS")
           login()
         }
         }

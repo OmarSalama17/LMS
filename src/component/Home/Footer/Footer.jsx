@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Logo from "../../../../img/logoHome.png"
 const logo =[
     {src:"https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg",
         width:"115"
@@ -116,7 +117,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col md:flex-row justify-between items-center pt-[32px] pb-[32px]">
                         <div className="mb-4 md:mb-0">
-                            <img className="w-[100px]" src="../../img/logo-colored.D50IsVGx.svg" alt="logo" />
+                            <img className="w-[100px]" src={Logo} alt="logo" />
                         </div>
                         <div className="text-[12px]">
                             © 2024 Academy, Inc.

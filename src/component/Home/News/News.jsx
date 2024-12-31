@@ -51,7 +51,7 @@ const {isDarkMode}=useContext(ThemeContext)
               <div className="col-12 my-[25px]">
                 <div className="text-[#696969] text-[20px] mt-3 mb-[15px]"><span className="mr-[8px]">📅</span>{currentNews.date}</div>
                 <Link
-                  to="/aboutus"
+                  to="/LMS/aboutus"
                   rel="noopener noreferrer"
                   className="no-underline max-w-[75%] text-[25px] block"
                 >
@@ -59,7 +59,7 @@ const {isDarkMode}=useContext(ThemeContext)
                 </Link>
               </div>
               <Link
-                to="/aboutus"
+                to="/LMS/aboutus"
                 rel="noopener noreferrer"
                 className="no-underline "
               >
@@ -84,7 +84,7 @@ const {isDarkMode}=useContext(ThemeContext)
                 <div className="col-12 text-[#696969] text-[20px] mb-[10px]"><span className="mr-[8px]">📅</span>{news.date}</div>
                 <div className="col-12">
                   <Link
-                    to="/aboutus"
+                    to="/LMS/aboutus"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="no-underline"

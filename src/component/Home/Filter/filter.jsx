@@ -47,7 +47,7 @@ const Filter = ({ maxPrice, handlePriceChange , difficultyFilter ,setDifficultyF
           </h6>
           <ul className="space-y-2 text-sm">
             {[
-              { id: "ALL", label: "ALL", checked: difficultyFilter === "ALL", checked: true },
+              { id: "ALL", label: "ALL", checked: difficultyFilter === "ALL" || true },
               { id: "HARD", label: "HARD " ,checked: difficultyFilter === "HARD" },
               { id: "EASY", label: "EASY " , checked: difficultyFilter === "EASY" },
             ].map((item) => (

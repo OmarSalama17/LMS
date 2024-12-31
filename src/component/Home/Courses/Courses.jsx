@@ -14,9 +14,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const navigation = [
-  { href: "/courses" },
-  { href: "/page2" },
-  { href: "/page3" },
+  { href: "/LMS/courses" },
+  { href: "/LMS/page2" },
+  { href: "/LMS/page3" },
 ];
 const renderStars = (rating) => {
   const fullStars = Math.floor(rating); 
@@ -148,7 +148,7 @@ useEffect(() => {
                 <div className="col-md-12">
                         <ol className="breadcrumb z-10 items-center">
                           <li className="breadcrumb-item z-10">
-                            <Link to='/' className="">
+                            <Link to='/LMS' className="">
                             <RiHome2Line />
                             </Link>
                           </li>
@@ -206,7 +206,7 @@ useEffect(() => {
         <div className="gap-y-10 gap-x-6 mb-[30px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
           {filterProductData.slice(0, 12).map((product) => (
             <div className="rounded " key={product.id}>
-              <Link className="no-underline text-black" to={`/courses/${product.id}`}>
+              <Link className="no-underline text-black" to={`/LMS/courses/${product.id}`}>
               <div>
                 <div>
                   <img
@@ -264,7 +264,7 @@ useEffect(() => {
                       : "text-black !font-bold no-underline bg-white ",
                     " px-3 py-2 text-sm font-medium no-underline"
                   )}
-                  to="/courses"
+                  to="/LMS/courses"
                 >
                   1
                 </Link>
@@ -277,7 +277,7 @@ useEffect(() => {
                       : "text-black !font-bold no-underline bg-white ",
                     " px-3 py-2 text-sm font-medium no-underline"
                   )}
-                  to="/page2"
+                  to="/LMS/page2"
                 >
                   2
                 </Link>
@@ -290,7 +290,7 @@ useEffect(() => {
                       : "text-black !font-bold no-underline bg-white ",
                     " px-3 py-2 text-sm font-medium no-underline"
                   )}
-                  to="/page3"
+                  to="/LMS/page3"
                 >
                   3
                 </Link>

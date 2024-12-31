@@ -1,5 +1,7 @@
 import { Description } from "@headlessui/react";
-
+import news1 from "../../../../img/news 1.jpg"
+import news4 from "../../../../img/news 4.jpg"
+import about from "../../../../img/aboutus.png"
 export default function AboutUs() {
     const dataOne=[
         {
@@ -97,7 +99,7 @@ export default function AboutUs() {
                     </ul>
                     </div>
                 </div>
-                    <img className="absolute top-0 right-0 h-full max-h-[464px] object-contain  " src="../../../../img/aboutus.png" alt="" />
+                    <img className="absolute top-0 right-0 h-full max-h-[464px] object-contain  " src={about} alt="" />
             </div>
         </div>
         </div>
@@ -107,7 +109,7 @@ export default function AboutUs() {
         <div className="flex container mb-[50px] justify-between">
                 
                 <div className="w-[45%] mt-[90px] br-37 overflow-hidden h-full rounded-md ">
-                    <img src="../../../../img/news 4.jpg" alt="" className="w-full rounded-md"/>
+                    <img src={news4} alt="" className="w-full rounded-md"/>
                 </div>
                 <div className="flex col-6 flex-col">
                         {
@@ -135,7 +137,7 @@ export default function AboutUs() {
             <div className="flex container mb-[50px] flex-row-reverse justify-between">
                 
                 <div className="w-[45%] mt-[100px] h-full br-37 overflow-hidden rounded-md ">
-                    <img src="/img/news%201.jpg" alt="" className="w-full rounded-md"/>
+                    <img src={news1} alt="" className="w-full rounded-md"/>
                 </div>
                 <div className="flex col-6 flex-col">
                 {

@@ -4,15 +4,15 @@ import {Link, useLocation } from 'react-router-dom'
 import { useContext ,useState} from 'react'
 import {ThemeContext} from '../ThemeDark/ThemeDark'
 import { FaUserAlt } from "react-icons/fa";
-
+import logo from "../../../../img/logoHome.png"
 import Profile from '../Profile/Profile'
 const navigation = [
-  { name: 'Home', href: '/' , current: false },
-  { name: 'Courses', href: '/courses', current: false },
-  { name: 'Offers', href: '/offers', current: false },
-  { name: 'Teachers', href: '/teachers', current: false },
-  { name: 'Contact Us', href: '/contactUs', current: false },
-  { name: 'About Us', href: '/aboutus', current: false },
+  { name: 'Home', href: '/LMS' , current: false },
+  { name: 'Courses', href: '/LMS/courses', current: false },
+  { name: 'Offers', href: '/LMS/offers', current: false },
+  { name: 'Teachers', href: '/LMS/teachers', current: false },
+  { name: 'Contact Us', href: '/LMS/contactUs', current: false },
+  { name: 'About Us', href: '/LMS/aboutus', current: false },
 ]
 
 function classNames(...classes) {
@@ -46,7 +46,7 @@ export default function Header({openForm}) {
           <Link to="/">
           <img
             alt="Your Company"
-            src="../../img/logoHome.png"
+            src={logo}
             className="h-8 w-auto  mr-[35px]"
           />
           </Link>

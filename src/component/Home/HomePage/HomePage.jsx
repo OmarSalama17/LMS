@@ -11,6 +11,7 @@ import { HiAcademicCap } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import News from "../News/News"
 import Register from "../Register/Register";
+import image from "../../../../img/freepik_br_f0aa722f-ab47-4af6-b051-e66111a1ec9a.png"
 export default function HomePage() {
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating); 
@@ -109,7 +110,7 @@ const {isDarkMode}=useContext(ThemeContext)
     </div>
     <div className={`${isDarkMode ? "dark color" : "bg-gray-100"} flex justify-between lg:flex-row flex-col py-[50px] my-[50px]`}>
         <div>
-        <img className="w-[95%]" src="../../../../img/freepik_br_f0aa722f-ab47-4af6-b051-e66111a1ec9a.png" alt="" />
+        <img className="w-[95%]" src={image} alt="" />
         </div>
         <div className="lg:w-[80%] p-[25px]">
             <div>
@@ -121,7 +122,7 @@ const {isDarkMode}=useContext(ThemeContext)
                     <p>When you enroll in one of our certificate courses, you’ll receive all the materials and guidance you need to pass.</p>
                     <p className="mb-[35px]"><span className="font-bold">Note:</span> You have 3 attempts to pass each exam.</p>
                     </div>
-                    <Link to="/courses" className="text-white font-bold no-underline bg-[#04aa6d] px-[18px] py-[12px]">Explore certificate courses</Link>
+                    <Link to="/LMS/courses" className="text-white font-bold no-underline bg-[#04aa6d] px-[18px] py-[12px]">Explore certificate courses</Link>
             </div>
         </div>
     </div>

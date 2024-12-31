@@ -52,22 +52,22 @@ if(isDarkMode){
     {form1}
       <Header openForm={openForm} />
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/teachers" element={<Teacher />} />
-        <Route path="/offers" element={<Offers/>} />
-        <Route path="/courses" element={<Courses/>} />
-        <Route path="/courses/:id" element={<CoursesDetails/>} />
-        <Route path="/contactUs" element={<Contact setFormData={setFormData} formData={formData} />} />
-        <Route path="/aboutus" element={<AboutUs setFormData={setFormData} formData={formData} />} />
-        {role === "admin" || role === "user" || role === "instructor" ?<Route path="/Dashboard" element={<Dash formData={formData} setFormData={setFormData}/>} />: null}
-        <Route path="/page2" element={<Page2/>} />
-        <Route path="/page3" element={<Page3/>} />
-        <Route path='/karimwagdi' element={<PageTeacher teacher="Kareem wagdi" />}/>
-        <Route path='/WilliamJohnson' element={<PageTeacher teacher="William Johnson" />}/>
-        <Route path='/JohnWick' element={<PageTeacher teacher="John Wick" />}/>
-        <Route path='/IsabellaMiller' element={<PageTeacher teacher="Isabella Miller" />}/>
-        <Route path='/MillerWilliam' element={<PageTeacher teacher="Miller William" />}/>
-        {role ==="admin" || role === "user" || role === "instructor" ? <Route path='/pageprofile' element={<PageProfile/>}/> : null}
+        <Route path="/LMS" element={<HomePage/>} />
+        <Route path="/LMS/teachers" element={<Teacher />} />
+        <Route path="/LMS/offers" element={<Offers/>} />
+        <Route path="/LMS/courses" element={<Courses/>} />
+        <Route path="/LMS/courses/:id" element={<CoursesDetails/>} />
+        <Route path="/LMS/contactUs" element={<Contact setFormData={setFormData} formData={formData} />} />
+        <Route path="/LMS/aboutus" element={<AboutUs setFormData={setFormData} formData={formData} />} />
+        {role === "admin" || role === "user" || role === "instructor" ?<Route path="/LMS/Dashboard" element={<Dash formData={formData} setFormData={setFormData}/>} />: null}
+        <Route path="/LMS/page2" element={<Page2/>} />
+        <Route path="/LMS/page3" element={<Page3/>} />
+        <Route path='/LMS/karimwagdi' element={<PageTeacher teacher="Kareem wagdi" />}/>
+        <Route path='/LMS/WilliamJohnson' element={<PageTeacher teacher="William Johnson" />}/>
+        <Route path='/LMS/JohnWick' element={<PageTeacher teacher="John Wick" />}/>
+        <Route path='/LMS/IsabellaMiller' element={<PageTeacher teacher="Isabella Miller" />}/>
+        <Route path='/LMS/MillerWilliam' element={<PageTeacher teacher="Miller William" />}/>
+        {role ==="admin" || role === "user" || role === "instructor" ? <Route path='/LMS/pageprofile' element={<PageProfile/>}/> : null}
         <Route path="*" element={<Error/>} />
       </Routes>
         <Footer/> 

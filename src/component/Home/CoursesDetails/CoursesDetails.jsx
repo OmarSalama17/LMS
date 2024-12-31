@@ -10,6 +10,14 @@ import { BsExclamationLg } from "react-icons/bs";
 import { ThemeContext } from "../ThemeDark/ThemeDark";
 import { IoIosSend } from "react-icons/io";
 import { MdDeleteForever } from "react-icons/md";
+import LOGO1 from "../../../../img/1.svg"
+import LOGO2 from "../../../../img/2.svg"
+import LOGO3 from "../../../../img/3.svg"
+import LOGO4 from "../../../../img/4.svg"
+import LOGO5 from "../../../../img/5.svg"
+import LOGO6 from "../../../../img/6.svg"
+import LOGO7 from "../../../../img/7.svg"
+import LOGO8 from "../../../../img/8.svg"
 export default function CoursesDetails() {
   const [comment, setComment] = useState('');
   const [comments, setComments] = useState([]);
@@ -257,14 +265,14 @@ export default function CoursesDetails() {
               <div>
                 <h3 className="mt-[20px] text-[20px] font-bold">This course includes</h3>
                 <ul className="">
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/1.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Assignments</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/2.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Forums</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/3.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Chats</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/4.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Glossaries</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/5.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Lessons</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/6.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Quizzes</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/7.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Resources</span></div></li>
-                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src="../../../../img/8.svg" className="w-[21px] h-[21px]" alt="" /></span><span>Surveys</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO1} className="w-[21px] h-[21px]" alt="" /></span><span>Assignments</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO2} className="w-[21px] h-[21px]" alt="" /></span><span>Forums</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO3} className="w-[21px] h-[21px]" alt="" /></span><span>Chats</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO4} className="w-[21px] h-[21px]" alt="" /></span><span>Glossaries</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO5} className="w-[21px] h-[21px]" alt="" /></span><span>Lessons</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO6} className="w-[21px] h-[21px]" alt="" /></span><span>Quizzes</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO7} className="w-[21px] h-[21px]" alt="" /></span><span>Resources</span></div></li>
+                  <li className="mb-[10px]"><div className="flex items-center"><span className="mr-[15px]"><img src={LOGO8} className="w-[21px] h-[21px]" alt="" /></span><span>Surveys</span></div></li>
                 </ul>
               </div>
             </div>

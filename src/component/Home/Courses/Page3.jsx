@@ -14,9 +14,9 @@ const Page3 = () => {
 
     const {Courses , deleteCourse  , isDarkMode} = useContext(ThemeContext);
     const navigation = [
-        {href: '/courses'},
-        {href:'/page2'},
-        {href:'/page3'},
+        {href: '/LMS/courses'},
+        {href:'/LMS/page2'},
+        {href:'/LMS/page3'},
       ]
       function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
@@ -133,19 +133,19 @@ const Page3 = () => {
                   <Link className={classNames(
                           location.pathname === navigation[0].href ? btn : 'text-black !font-bold no-underline bg-white ',
                       ' px-3 py-2 text-sm font-medium no-underline' ,
-                        )} to='/courses'>1</Link>
+                        )} to='/LMS/courses'>1</Link>
                   </li>
                   <li className="mr-[10px]">
                   <Link className={classNames(
                           location.pathname === navigation[1].href ? btn : 'text-black !font-bold no-underline bg-white ',
                       ' px-3 py-2 text-sm font-medium no-underline' ,
-                        )} to='/page2'>2</Link>
+                        )} to='/LMS/page2'>2</Link>
                   </li>
                   <li>
                 <Link className={classNames(
                           location.pathname === navigation[2].href ? btn : 'text-black !font-bold no-underline bg-white  ',
                       'px-3 py-2 text-sm font-medium no-underline',
-                        )} to='/page3'>3</Link>
+                        )} to='/LMS/page3'>3</Link>
                   </li>
                 </ul>
               </div>

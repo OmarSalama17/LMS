@@ -1,6 +1,7 @@
 import { useState,useContext } from "react";
 import { ThemeContext } from "../ThemeDark/ThemeDark";
 import logo from "../../../../img/logoins.png"
+import logoUser from "../../../../img/vecteezy_default-male-avatar-profile-icon-social-media-chatting_25337669.jpg"
 const PageProfile = () => {
   const logoinstructor=logo
 const {isDarkMode , role ,users , loggedInUser,email }=useContext(ThemeContext)
@@ -15,7 +16,7 @@ const {isDarkMode , role ,users , loggedInUser,email }=useContext(ThemeContext)
       <div className="w-full max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center !justify-center sm:justify-start relative z-10 mb-5">
           <img
-            src={role === "admin" ? "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80": role === "user" ? "../../../../img/vecteezy_default-male-avatar-profile-icon-social-media-chatting_25337669.jpg":logoinstructor}
+            src={role === "admin" ? "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80": role === "user" ? logoUser :logoinstructor}
             alt="user-avatar-image"
             className="border-4 w-[25%] border-solid border-[#DBDBDB] !bg-floralwhite rounded-full object-cover"
           />

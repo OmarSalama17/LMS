@@ -1,0 +1,23 @@
+.toggle_dot {
+    top: -.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked~.toggle_dot {
+    transform: translateX(100%);
+    background-color: #05a7ff !important;
+}
+.bg-gradient {
+    background: #667db6;
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.bg-gradient-base {
+    background-color: #0082c8;
+}
+.font-work-sans {
+    font-family: 'Work Sans', sans-serif;
+}
+.shadow-custom{
+    box-shadow: 0 10px 25px hsl(210deg 8% 62% / 71%);
+}

@@ -1,0 +1,52 @@
+.image::before {
+  content: "";
+  width: 114%;
+  padding-top: 107%;
+  position: absolute;
+  border-right-color: transparent !important;
+  transform: rotate(var(--before));
+  top: 47px;
+  left: -16px;
+  border-radius: 50%;
+  border: 9px solid var(--color);
+  z-index: -1;
+  transition: 0.5s;
+
+}.image::after {
+  content: "";
+  border-right-color: transparent !important;
+  transform: rotate(var(--after));
+  width: 114.3%;
+  padding-top: 107%;
+  position: absolute;
+  top: 47px;
+  left: -16px;
+  border-radius: 50%;
+  border: 9px solid var(--color);
+  z-index: -1;
+  transition: 0.5s;
+}
+.div1:hover .image::before{
+  transform: rotate(-36deg);
+}
+.div1:hover .image::after{
+  transform: rotate(30deg);
+
+}
+.div1:hover .icon{
+  margin-right: 8px;
+  width: 30px;
+  opacity: 1 !important;
+}
+.color1{
+color: #eccde3;
+}.color2{
+  color: #b6eee1;
+}.color3{
+  color: #fee6ac;
+}.color4{
+  color: #ccdafb;
+}.color5{
+  color: #ffd0d4;
+  
+}

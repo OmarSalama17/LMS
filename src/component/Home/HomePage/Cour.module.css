@@ -1,0 +1,19 @@
+.theme-courses-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+}
+.text{
+    border-bottom: 1px solid #dfdfdf;
+    height: 140px;
+}
+.course-item{
+    flex: 0 0 26%;
+    max-width: 26%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 3rem;
+}

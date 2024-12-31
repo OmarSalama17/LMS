@@ -1,0 +1,58 @@
+.column{
+    flex: 11.11%;
+    max-width: 11.11% !important;
+    padding: 0 4px !important;
+}
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-top: 8px;
+    width: 100%;
+}
+.image:hover{
+    outline: 100px solid rgba(255, 0, 0, 0.3) !important;
+    outline-offset: -100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-wrapper{
+    display: flex;
+    gap: 2.5rem;
+    overflow: hidden;
+    user-select: none;
+    height: 62px;
+}
+.marquee-wrapper .marquee {
+    flex-shrink: 0;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-around;
+    min-width: 100%;
+}
+.scroll{
+    animation: marqueeAnimation 100s linear infinite;
+}
+@keyframes marqueeAnimation{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 2.5rem));
+    }
+}
+.marquee-wrapper .marquee .scroll .img-fluid{
+    max-width: 140px;
+    opacity: 1;
+    align-self: center;
+}
+@media(max-width:992px){
+    .column{
+        flex: 33.11%;
+        max-width: 33.11% !important;
+    }
+}
